@@ -48,3 +48,37 @@ $(function () {
     animation: "slide",
   });
 });
+
+/* Portfolio */
+
+/* Isotope */
+$(window).on("load", function () {
+  // Initialize Isotopoe
+
+  $("#isotope-container").isotope({});
+  //filter code
+
+  $("#isotope-filters").on("click", "button", function () {
+    //get filter value
+    var filterValue = $(this).attr("data-filter");
+    //filter items
+    $("#isotope-container").isotope({
+      filter: filterValue,
+    });
+    //active
+    $("#isotope-filters").find(".active").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+
+//Magnific Popup
+
+$(function () {
+  $("#portfolio-wrapper").magnificPopup({
+    delegate: "a", //child items selector, by clicking on it popup will open
+    type: "image",
+    gallery: {
+      enabled: true,
+    },
+  });
+});
