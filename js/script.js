@@ -5,7 +5,7 @@ $(window).on("load", function () {
 
 /* Team */
 $(function () {
-  $(".owl-carousel").owlCarousel({
+  $("#team-members").owlCarousel({
     items: 2,
     autoplay: true,
     smartSpeed: 600,
@@ -80,5 +80,22 @@ $(function () {
     gallery: {
       enabled: true,
     },
+  });
+});
+
+//Testimonial Section
+$(function () {
+  $("#testimonial-slider").owlCarousel({
+    items: 1,
+    autoplay: false,
+    smartSpeed: 600,
+    loop: true,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="fa fa-angle-left"></i>',
+      '<i class="fa fa-angle-right"></i>',
+    ],
   });
 });
