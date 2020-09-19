@@ -1190,3 +1190,12 @@ footer p span {
 .white-nav-top ul.navbar-nav > li > a:focus {
   color: #f4c613 !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    background-color: black !important;
+  }
+  .white-nav-top {
+    background-color: white !important;
+  }
+}
