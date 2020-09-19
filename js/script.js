@@ -154,3 +154,51 @@ $(window).on("load", function () {
     infowindow.open(map, marker);
   });
 });
+
+/* Show and Hide White Navigation */
+
+$(function () {
+  showHideNav();
+  $(window).scroll(function () {
+    showHideNav();
+  });
+
+  function showHideNav() {
+    if ($(window).scrollTop() > 50) {
+      $("nav").addClass("white-nav-top");
+
+      //dark logo
+
+      $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+
+      //Show Back to top button
+      $(".back-to-top").fadeIn();
+    } else {
+      $("nav").removeClass("white-nav-top");
+      $(".navbar-brand img").attr("src", "img/logo/logo.png");
+
+      //Hide back to top btn
+
+      $(".back-to-top").fadeOut();
+    }
+  }
+});
+
+//Smooth scrolling
+$(function () {
+  $("a.smooth-scroll").click(function (event) {
+    event.preventDefault();
+
+    //get section id
+
+    var section_id = $(this).attr("href");
+
+    $("html, body").animate(
+      {
+        scrollTop: $(section_id).offset().top - 64,
+      },
+      1250,
+      "easeInOutExpo"
+    );
+  });
+});
