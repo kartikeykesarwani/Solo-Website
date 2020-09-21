@@ -1,0 +1,157 @@
+/*Bootstrap Media Queries*/
+
+/*Large Devices */
+@media (min-width: 1200px) {
+}
+
+/* Medium Devices */
+@media (min-width: 991.5px) and (max-width: 1199.5px) {
+  /*Generic */
+  /*Services 02*/
+  #services-tabs .tab-bg {
+    min-height: 394.975px;
+    padding: 10px 25px;
+  }
+
+  .services-tab p {
+    line-height: 20px;
+  }
+}
+
+/* Small Devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav li {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .navbar-nav li a {
+    padding-left: 8px !important;
+    padding-right: 7px !important;
+  }
+  .navbar-brand {
+    padding-top: 10px;
+    padding-left: 12px;
+  }
+  .navbar-collapse {
+    padding-right: 5px;
+    padding-top: 10px;
+  }
+
+  /*Home SEction*/
+  #home-heading h1 {
+    font-size: 41px;
+  }
+
+  #home-text p {
+    font-size: 13px;
+  }
+  /*gneric*/
+  .btn-general {
+    padding: 8px 35px 8px 35px;
+    font-size: 10px;
+  }
+  .vertical-heading h2 {
+    font-size: 33px;
+  }
+  /*Services01*/
+  #services-01 img {
+    position: relative;
+    top: 100px;
+  }
+
+  /*Text Statement */
+  #tech-statement h2 {
+    font-size: 29px;
+  }
+
+  #tech-statement h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /*SErvices tabs 02 */
+  .r-tabs-accordion-title {
+    text-align: center !important;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .r-tabs-accordion-title a {
+    font-family: "Raleway", sans-serif;
+    font-family: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+  }
+  .r-tabs-state-active a {
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding: 5px;
+    transition: border-color 300ms linear;
+    -webkit-transition: border-color 300ms linear;
+  }
+
+  .portfolio-item-details h3 {
+    font-size: 20px;
+  }
+
+  /*Testimonial*/
+  .testimonial h3 {
+    font-size: 28px;
+  }
+
+  .pricing-table .price h2 {
+    font-size: 25px;
+  }
+  .pricing-table .price h2 span.month {
+    left: 0;
+  }
+
+  /*contact section */
+
+  #offices .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  ul.office-details {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul.office-details li {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 12px;
+    display: flex;
+    font-size: 15px;
+  }
+  ul.office-details li i {
+    font-size: 15px;
+    width: 20px;
+  }
+  .office h4 {
+    position: relative;
+    left: 7px;
+  }
+
+  #google-map #map {
+    height: 400px;
+  }
+
+  .author img {
+    position: relative;
+    top: 38px;
+    left: 10px;
+  }
+
+  .testimonial p {
+    position: relative;
+    top: 15px;
+  }
+}
+
+/* Extra Small devices */
+
+@media (max-width: 767px) {
+}
