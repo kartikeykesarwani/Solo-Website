@@ -154,11 +154,11 @@ $(window).on("load", function () {
   });
 
   //Add Info window
-  var infowindow = new google.maps.infoWindow({
+  var infowindow = new google.maps.InfoWindow({
     content: addressString,
   });
 
-  marker.addEventListener("click", function () {
+  $("marker").on("click", function () {
     infowindow.open(map, marker);
   });
 });
@@ -209,4 +209,18 @@ $(function () {
       "easeInOutExpo"
     );
   });
+});
+
+/* Animation */
+
+/*Animate on scroll */
+
+$(function () {
+  $("#home-heading-1").addClass("animate__animated animate__fadeInDown");
+  $("#home-heading-2").addClass("animate__animated animate__fadeInLeft");
+  $("#home-text").addClass("animate__animated animate__zoomIn");
+  $("#home-btn").addClass("animate__animated animat__zoomIn");
+  $("#arrow-down i").addClass(
+    "animate__animated animate__fadeInDown animate__infinite"
+  );
 });
